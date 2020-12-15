@@ -1,0 +1,10 @@
+---
+# Install ZABBIX? Client
+- hosts: zabbix_client
+  remote_user: root
+  become: True
+  tasks:
+   - name: Install the latest version of zabbix-agent
+     yum:
+       name: zabbix-agent
+       state: latest
