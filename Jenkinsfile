@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Compile') {
       steps {
-        git 'https://github.com/DevopsMkt/samplejavaapp.git'
+        git 'https://github.com/DevopsMkt/Ansible.git'
         sh '/opt/apache-maven-3.6.3/bin/mvn compile'
         sleep 10
       }
